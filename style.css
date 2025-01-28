@@ -359,3 +359,164 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.testimonial-section {
+  background-color: var(--background-color);
+  padding: 2rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.testimonial-content .testimonial-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 0px auto;
+  grid-template-columns: repeat(3, 340px);
+  grid-template-rows: repeat(1, 260px);
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgb(83, 80, 80);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid blue;
+}
+.testimonial-card p {
+  font-size: large;
+}
+.avatar-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-image img {
+  height: 5rem;
+  width: 5rem;
+}
+.testimonial-card h2 {
+  font-size: large;
+}
+
+.testimonial-card .testimonial-text {
+  font-size: 0.875rem;
+  color: #555;
+}
+.testimonial-name {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+.Teacher {
+  font-size: 0.875rem;
+  color: #777;
+}
+@media screen and (max-width: 1171px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.Newslettersection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
+.newsbox {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 1rem; */
+  height: 25rem;
+  width: 1081px;
+  background-color: var(--light-gray);
+}
+.newsleftbox img {
+  height: 25rem;
+  width: 35rem;
+  object-position: center;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.newsleftbox {
+  display: none;
+  margin-top: 20px;
+}
+.newsrightbox {
+  display: flex;
+  padding: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 680px) {
+  .newsleftbox {
+    display: block;
+  }
+}
+.newsrightbox h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+.signup {
+  font-size: 1rem;
+  color: #777;
+}
+.mailInput {
+  background-color: var(--background-color);
+  height: 1.8rem;
+  padding-left: 5px;
+
+  color: #333;
+}
+
+.mailInput:focus {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-color: #256e3b;
+}
+.sendbutton {
+  height: 2rem;
+  width: 3.5rem;
+  outline: none;
+  padding: 7px;
+  border: 1px solid white;
+  color: var(--background-color);
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.bottombox {
+  display: flex;
+  font-size: 0.65rem;
+}
+
+.bottombox a {
+  text-decoration: underline;
+}
+.bottombox p {
+  text-decoration: none;
+  color: #777;
+}
